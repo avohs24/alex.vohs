@@ -159,6 +159,16 @@ code {
     font-weight: 250;
   }
 }
+
+.profilepicture {
+  width: 375px;
+  height: 375px;
+
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+}
 .progress-bar-animation {
   @extend .progress;
   & > * {

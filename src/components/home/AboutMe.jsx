@@ -37,17 +37,15 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
   return (
     <Jumbotron style={bgStyle} id="aboutme">
       <div className="container row">
-        <div className="col-5 d-none d-lg-block align-self-center">
-          {showPic && (
+        <div className="col-5 d-lg-block align-self-center text-center w-[100vw]">
             <img
-              className="border border-secondary rounded-circle"
+              className="border border-secondary rounded-circle profilepicture"
               src={profilePicUrl}
               alt="profilepicture"
               width={imgSize}
               height={imgSize}
               style={imgStyle}
             />
-          )}
         </div>
         <div className={`col-lg-${showPic ? "7" : "12"}`}>
           <h2 className="display-4 mb-5 text-center">{heading}</h2>
